@@ -1,0 +1,28 @@
+
+//main colours
+$primary: rgb(146, 204, 206);
+$secondary: rgb(227, 145, 97);
+
+// Contains global and theme values
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// Colours 2.0 "custom colours"
+$custom-colors: (
+    "primary-dark": rgb(73, 94, 99),
+);
+
+
+// Merge new custom colours map with the Bootstrap theme colors in VARIABLES.SCSS
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Import Bootstrap SCSS after defining your custom variables
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css");	
+//
+$font-family-base: 'Graduate', serif;
+
+//Bootstrap SCSS
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
