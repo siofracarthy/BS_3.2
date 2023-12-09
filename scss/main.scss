@@ -1,10 +1,10 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 //main colours
-$primary: rgb(0, 255, 229);
+$primary: rgb(146, 204, 206);
 $secondary: rgb(227, 145, 97);
 $tertiary: rgb(96, 186, 98);
-$steffo:red;
+
 
 // Contains global and theme values
 @import "../node_modules/bootstrap/scss/variables";
@@ -13,6 +13,7 @@ $steffo:red;
 // Colours 2.0 "custom colours"
 $custom-colors: (
     "primary-dark": rgb(73, 94, 99),
+    "primary-light": rgb(124, 150, 157),
     
 );
 
@@ -21,15 +22,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 
-// Fonts
-// @import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
-// @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css");	
-// @import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css");	
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
 
-// $font-family-base: 'Graduate', serif;
-// $font-family-secondary: 'Hanuman', serif;
+$font-family-base: 'Graduate', serif;
+$font-family-secondary: 'Hanuman', serif;
 
 
+.my-custom-font {
+    font-family: $font-family-secondary;
+}
 
 
 //Bootstrap SCSS
