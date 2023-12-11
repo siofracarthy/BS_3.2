@@ -14,6 +14,14 @@
 	<header #="top">
 
 		<!-- NAVBAR -->
+		<style>
+			.navbar-nav {
+				display: flex;
+				align-items: center;
+				height: 100%;
+			}
+		</style>
+
 		<nav class="navbar navbar-expand-lg bg-primary pt-4">
 			<div class="container-lg">
 				<a class="navbar-brand fw-bold" href="#">
@@ -26,29 +34,36 @@
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-					<ul class="navbar-nav mb-4 mb-lg-0 ">
+				<div class="collapse navbar-collapse justify-content-between align-items-center"
+					id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto mb-4 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active text-secondary px-3" aria-current="page" href="#">HOME</a>
+							<a class="nav-link active text-secondary px-4 fw-semibold" aria-current="page"
+								href="#">HOME</a>
 						</li>
-
 						<li class="nav-item">
-							<a class="nav-link active px-4" aria-current="page" href="#">FOOD</a>
+							<a class="nav-link active px-4 fw-semibold" aria-current="page" href="#">FOOD</a>
 						</li>
-
 						<li class="nav-item">
-							<a class="nav-link active px-4" aria-current="page" href="#">SERVICES</a>
+							<a class="nav-link active px-4 fw-semibold" aria-current="page" href="#">SERVICES</a>
 						</li>
-
 						<li class="nav-item">
-							<a class="nav-link active px-4" aria-current="page" href="#">ABOUT US</a>
+							<a class="nav-link active px-4 fw-semibold" aria-current="page" href="#">ABOUT US</a>
 						</li>
 					</ul>
-					<i class="bi bi-search"></i>
-					<i class="bi bi-cart fs-5 p- m-1 text-black bg-white rounded-circle justify-content-end"></i>
+					<div class="icons200 text-end">
+						<i class="bi bi-search"></i>
+						<i class="bi bi-cart fs-5 p-1 m-1 text-black bg-white rounded-circle"></i>
+					</div>
 				</div>
 			</div>
 		</nav>
+
+
+
+
+
+
 
 		<!-- SAVOUR THE FLAVOUR -->
 		<div class="container-fluid bg-primary text-light py-5">
@@ -65,14 +80,21 @@
 							creates fictitious, fake, causal, or placeholder text.
 						</p>
 						<button type="button "
-							class="btn bg-primary-dark text-white btn-primary btn-sm p-3 rounded ">Book
+							class="btn bg-primary-dark text-white btn-primary btn-sm px-5 py-3 rounded-5 ">Book
 							A
 							Table</button>
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 100px" alt="" />
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 100px" alt="" />
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 100px" alt="" />
+
+
+						<img src="./images/breakfast-400x400.png"
+							class="rounded-circle border border-secondary border-4" style="height: 70px" alt="" />
+						<img src="./images/breakfast-400x400.png"
+							class="rounded-circle border border-secondary border-4" style="height: 70px" alt="" />
+						<img src="./images/breakfast-400x400.png"
+							class="rounded-circle border border-secondary border-4" style="height: 70px" alt="" />
 						<h4 class="d-inline-block text-black">1200+</h4>
 					</div>
+
+					<!-- Logo image -->
 					<div class="col-md-6">
 						<img src="./images/logo.jpg" class="img-fluid" alt="" />
 					</div>
@@ -95,9 +117,27 @@
 									alt="" />
 							</div>
 
-							<div class="col-md-2 bg-white rounded-5 mx-4">
-								<h4 class="mx-3  my-3  text-dark">Goulash</h4>
-								<h2 class="text-secondary">$25.00</h2>
+							<div
+								class="col-md-2 bg-white rounded-5 mx-4 d-flex align-items-center justify-content-between">
+								<div>
+									<p class="mx-1 mt-4 text-dark fw-bold fs-5 mb-0">Goulash</p>
+									<h2 class="text-secondary-dark">$25.00</h2>
+								</div>
+								<button class="btn"><i class="bi bi-bag-plus text-white bg-black rounded-circle px-3 py-3 fs-5 mx-2"></i></button>
+							</div>
+
+							<div class="col-md-1 mx-3">
+								<img src="./images/breakfast-400x400.png"
+									class="rounded-circle border border-primary border-5" style="height: 120px"
+									alt="" />
+							</div>
+
+							<div class="col-md-2 bg-white rounded-5 d-flex align-items-center justify-content-between">
+								<div>
+									<p class="mx-1 mt-4 text-dark fw-bold fs-5 mb-0">Goulash</p>
+									<h2 class="text-secondary-dark">$25.00</h2>
+								</div>
+								<button class="btn"><i class="bi bi-bag-plus text-white bg-black rounded-circle px-3 py-3 fs-5 mx-2"></i></button>
 							</div>
 
 							<div class="col-md-1 mx-4">
@@ -105,20 +145,14 @@
 									alt="" />
 							</div>
 
-							<div class="col-md-2 bg-white rounded-5">
-								<h4 class="mx-3  my-3  text-dark">Goulash</h4>
-								<h2 class="text-secondary">$25.00</h2>
-
+							<div class="col-md-2 bg-white rounded-5 d-flex align-items-center justify-content-between">
+								<div>
+									<p class="mx-1 mt-4 text-dark fw-bold fs-5 mb-0">Goulash</p>
+									<h2 class="text-secondary-dark">$25.00</h2>
+								</div>
+								<button class="btn"><i class="bi bi-bag-plus text-white bg-black rounded-circle px-3 py-3 fs-5 mx-2"></i></button>
 							</div>
 
-							<div class="col-md-1 mx-4">
-								<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 120px"
-									alt="" />
-							</div>
-							<div class="col-md-2 bg-white rounded-5">
-								<h4 class="mx-3 my-3 text-dark">Goulash</h4>
-								<h2 class="text-secondary">$25.00</h2>
-							</div>
 						</div>
 					</div>
 
@@ -131,7 +165,7 @@
 		<div class="container-fluid bg-primary-dark">
 			<div class="container-lg bg-primary-dark ">
 				<div class="row justify-content-sm-start">
-					<div class="col-5 ">
+					<div class="col-md-4 ">
 						<h2 class="text-white text-uppercase  pt-5">
 							<small>MENU</small>
 						</h2>
@@ -141,115 +175,159 @@
 							fictitious, fake, causal, or placeholder text.
 						</p>
 						<button type="button"
-							class="btn bg-secondary text-white btn-sm p-3 rounded-3 my-custom-font mt-3">View
+							class="btn bg-secondary text-white btn-secondary btn-sm px-5 py-3 rounded-5">View
 							Menus</button>
 					</div>
-					<div class="col-7">
+					<div class="col-md-8">
 						<img src="./images/Greenville-Web-banner.jpg" class="img-fluid" alt="..">
 					</div>
 				</div>
-
-
-			</div>
-			<div class="container-fluid bg-secondary">
-				<div class="container-lg bg-secondary ">
-					<div class="row justify-content-sm-start">
-						<div class="col-7">
-							<img src="./images/click-collect.jpg" class="img-fluid" alt="..">
-						</div>
-						<div class="col-5 ">
-							<h2 class="text-white text-uppercase pt-5">
-								<small>CLICK & COLLECT</small>
-							</h2>
-							<p class="fw-light text-white my-custom-font">
-								Use the text generator to create your own text! The Lorem Ipsum online text generator
-								creates
-								fictitious, fake, causal, or placeholder text.
-							</p>
-							<button type="button"
-								class="btn bg-primary-dark text-white btn-sm p-3 rounded-3 font-family-secondary mt-3">Click
-								& Collect
-							</button>
-						</div>
-					</div>
-
-				</div>
 			</div>
 
-			<div class="container-fluid bg-primary-dark">
-				<div class="container-lg bg-primary-dark ">
-					<div class="row justify-content-sm-start">
-						<div class="col-5 ">
-							<h2 class="text-white text-uppercase  pt-5">
-								<small>OFFICE CATERING</small>
-							</h2>
-							<p class="fw-light text-white my-custom-font">
-								Use the text generator to create your own text! The Lorem Ipsum online text generator
-								creates
-								fictitious, fake, causal, or placeholder text.
-							</p>
-							<button type="button"
-								class="btn bg-secondary text-white btn-sm p-3 rounded-3 font-family-secondary mt-3">Office
-								Catering</button>
-						</div>
-						<div class="col-7">
-							<img src="./images/our-menu (1).jpg" class="img-fluid" alt="..">
-						</div>
-					</div>
-
-				</div>
-			</div>
 		</div>
-		</div>
+		<div class="container-fluid bg-secondary">
+			<div class="container-lg bg-secondary ">
+				<div class="row justify-content-sm-start">
+					<div class="col-8">
+						<img src="./images/click-collect.jpg" class="img-fluid" alt="..">
+					</div>
+					<div class="col-4 ">
+						<h2 class="text-white text-uppercase pt-5">
+							<small>CLICK & COLLECT</small>
+						</h2>
+						<p class="fw-light text-white my-custom-font">
+							Use the text generator to create your own text! The Lorem Ipsum online text generator
+							creates
+							fictitious, fake, causal, or placeholder text.
+						</p>
+						<button type="button"
+							class="btn bg-primary-dark text-white btn-primary-dark btn-sm px-5 py-3 rounded-5">Click
+							& Collect
+						</button>
+					</div>
+				</div>
 
-		<div class="container-fluid bg-white">
-			<div class="container-xl bg-white">
-				<h1 class="h1 fw-bold pt-5 text-secondary">LOCATIONS</h1>
 			</div>
 		</div>
 
 		<div class="container-fluid bg-primary-dark">
-			<div class="container-xl bg-primary-dark">
+			<div class="container-lg bg-primary-dark ">
+				<div class="row justify-content-sm-start">
+					<div class="col-4 ">
+						<h2 class="text-white text-uppercase pt-5">
+							<small>OFFICE CATERING</small>
+						</h2>
+						<p class="fw-light text-white my-custom-font w-10 my-custom-font fs-6">
+							Use the text generator to create your own text! The Lorem Ipsum online text generator
+							creates
+							fictitious, fake, causal, or placeholder text.
+						</p>
+						<button type="button"
+							class="btn bg-secondary text-white btn-secondary btn-sm px-5 py-3 rounded-5">Office
+							Catering</button>
+					</div>
+					<div class="col-8">
+						<img src="./images/our-menu (1).jpg" class="img-fluid" alt="..">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div class="container-fluid bg-white">
+			<div class="container-xl bg-white">
+				<h1 class="h1 fw-bold pt-5 text-secondary">LOCATIONS</h1>
+				<div class="container py-5">
+					<div class="row pb-3 justify-content-sm-start">
+						<div class="col">
+							<div class="card" style="width: 18rem;">
+								<img src="./images/logo.jpg" class="card-img-top" alt=".">
+								<div class="card-body border border-primary">
+									<small>
+										<p class="fw-bold py-1 m-0">Rathmines, Dublin 6, D06 HX53</p>
+									</small>
+									<h3 class="card-title text-secondary fw-bold">Rathmines</h3>
+									<p class="card-text my-custom-font">Some quick example text to build on the card
+										title and make up
+										the bulk of the card's content.</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="col pb-3">
+							<div class="card" style="width: 18rem;">
+								<img src="./images/logo.jpg" class="card-img-top" alt=".">
+								<div class="card-body border border-primary">
+									<small>
+										<p class="fw-bold py-1 m-0">Rathmines, Dublin 6, D06 HX53</p>
+									</small>
+									<h3 class="card-title text-secondary fw-bold">inchicore</h3>
+									<p class="card-text my-custom-font">Some quick example text to build on the card
+										title and make up
+										the bulk of the card's content.</p>
+
+								</div>
+							</div>
+						</div>
+						<div class="col pb-3">
+							<div class="card" style="width: 18rem;">
+								<img src="./images/logo.jpg" class="card-img-top" alt=".">
+								<div class="card-body border border-primary ">
+									<small>
+										<p class="fw-bold py-1 m-0">Rathmines, Dublin 6, D06 HX53</p>
+									</small>
+									<h3 class="card-title text-secondary fw-bold">monkstown</h3>
+									<p class="card-text my-custom-font ">Some quick example text to build on the card
+										title and make up
+										the bulk of the card's content.</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid bg-primary-dark">
+			<div class="container-xl bg-primary-dark justify-content-center">
 				<h1 class="text-white text-center py-5">POPULAR MENU</h1>
+
 				<div class="row justify-content-center">
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
+						<h2 class="text-center text-white fw-light">Goulash</h2>
+						<p class="my-custom-font">Use the text generator to create
+							your own text! </p>
 					</div>
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
-					</div>
-
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
 					</div>
 
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
+					</div>
+
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
 					</div>
 				</div>
 
 				<div class="row align-items-center">
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
 					</div>
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
 					</div>
 
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
 					</div>
 
-					<div class="col-3">
-						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 250px"
-						alt="" />
+					<div class="col-3 py-4">
+						<img src="./images/breakfast-400x400.png" class="rounded-circle" style="height: 200px" alt="" />
 					</div>
 				</div>
 
@@ -313,7 +391,7 @@
 				</div>
 				<div class="d-flex justify-content-center">
 					<button type="button pb-4"
-						class="btn bg-secondary text-white btn-sm p-3 rounded-3 font-family-secondary my-5">Contact
+						class="btn bg-secondary text-white btn-sm p-3 rounded-3 font-family-secondary my-5 btn-sm">Contact
 						Us</button>
 				</div>
 
@@ -387,8 +465,8 @@
 
 		<div class="container-fluid bg-primary-dark">
 			<div class="container-xl">
-			<img src="./images/Greenville-0001-2 (1).jpg" class="img-fluid" alt="...">
-		</div>
+				<img src="./images/Greenville-0001-2 (1).jpg" class="img-fluid" alt="...">
+			</div>
 		</div>
 
 
