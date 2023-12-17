@@ -18,6 +18,8 @@ $custom-colors: (
 
 );
 
+
+
 // Merge new custom colours w the theme
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
@@ -45,8 +47,20 @@ $font-family-secondary: 'Hanuman', serif;
 .px-6 {
     padding-right: 4rem !important;
     padding-left: 4rem !important;
-  }
+}
 
+.px-7 {
+    padding-right: 5rem !important;
+    padding-left: 5rem !important;
+}
+
+.nav-link:hover {
+    color: $secondary !important;
+}
+
+.page-link:hover {
+    color: $secondary !important;
+}
 
 //Bootstrap SCSS
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

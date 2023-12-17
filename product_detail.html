@@ -1,47 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail</title>
-    <link rel="stylesheet" href="../css/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Product Detail</title>
+	<link rel="stylesheet" href="../css/main.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary-dark pt-4">
-        <div class="container-lg">
-            <a class="navbar-brand fw-bold" href="#">
-                <img src="./images/logo.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-                GREENVILLE DELI
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between align-items-center"
-                id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-4 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link px-4 fw-semibold" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-secondary px-4 fw-semibold" aria-current="page"
-                            href="#">MENU</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-4 fw-semibold" aria-current="page" href="#">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link px-4 fw-semibold" aria-current="page" href="#">ABOUT US</a>
-                    </li>
-                </ul>
-                <div class="icons200 text-end">
-                    <i class="bi bi-search fs-5"></i>
-                    <i class="bi bi-cart fs-5 p-1 m-1 text-black bg-white rounded-circle p-2"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
+	<nav class="navbar navbar-expand-lg bg-primary pt-4 py-3">
+		<div class="container-lg">
+			<a class="navbar-brand fw-bold fs-4" href="#">
+				<img src="./images/logo.jpg" alt="logo" width="30" height="24" class="d-inline-block">
+				GREENVILLE DELI
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-between align-items-center"
+				id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-4 mb-lg-0">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link px-4 fw-semibold fs-5" aria-current="page"
+							href="#">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link text-secondary px-4 fw-semibold fs-5" aria-current="page"
+							href="#">MENU</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link px-4 fw-semibold fs-5" aria-current="page" href="#">SERVICES</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link px-4 fw-semibold fs-5" aria-current="page" href="#">ABOUT US</a>
+					</li>
+				</ul>
+				<div class="icons200 text-end">
+					<i class="bi bi-search fs-5"></i>
+					<i class="bi bi-cart fs-5 p-1 m-1 text-black bg-white rounded-circle p-2"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!--Product details -->
+
+
+	<div class="container-fluid my-5 py-3">
+		<div class="container-lg my-5">
+			<div class="row align-items-start">
+				<div class="arrow_goback d-flex">
+					<a href='./menu_page.html' class="nav-link"><i
+							class="bi bi-arrow-left fs-3 py-1 text-black"></i></a>
+					<a href='./menu_page.html' class="nav-link">
+						<h4 class="py-2 mx-3 text-black nav-link fs-4">Go Back</h4>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<img src="./images/vegan-loaded-taco-fries-270x270.jpg" width="400" height="350">
+				</div>
+				<div class="col-md-4	">
+					<h1 class="d-inline-block fw-bold fs-1">Chilli fries</h1>
+					<h2 class=" text-rank-green fw-light py-1">$22.50</h2>
+					<small>
+						<p class="my-custom-font text-black fw-light fs-5">Vegan loaded potatoes with smokey green
+							lentils, broccoli stem, pico de galo, jalapeños & vegan garlic mayo.</p>
+					</small>
+
+					<button type="button"
+						class="btn btn-white btn-outline-primary text-black btn-md btn-white px-7 py-3 rounded-5 my-3 ">Add
+						to cart</button>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--div for the lonesome hr ?! -->
+		<div class="container-lg">
+			<hr class="text-black">
+		</div>
+
+		<div class="container-fluid bg-white">
+			<div class="container-xl bg-white  justify-content-sm-start">
+
+				<div class="row py-5">
+					<h1 class="py-2">PEOPLE ALSO LIKE:</h1>
+					<div class="col-3 py-4">
+
+						<div class="bg-white" width="17rem">
+							<img class="card-img-top bg-white" src="./images/brunch-box-Pulled-Pork-Hash-270x270.jpg"
+								alt="Card image cap">
+							<div class="card-body bg-white d-flex flex-column justify-content-start">
+								<h2 class="justify-content-sm-start text-black fw-light my-2 fs-2">Pulled Pork</h2>
+								<h2 class="text-rank-green">$9.00</h2>
+
+								<button type="button"
+									class="btn btn-white btn-outline-primary text-black btn-sm btn-white px-6 py-3 rounded-5 my-3 fs-5  ">Add
+									to cart</button>
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="col-3 py-4">
+
+						<div class="bg-white" width="17rem">
+							<img class="card-img-top bg-white" src="./images/shutterstock_438744178-270x270.jpeg"
+								alt="Card image cap">
+							<div class="card-body bg-white d-flex flex-column justify-content-start">
+								<h2 class="justify-content-sm-start text-black fw-light my-2 fs-2">Soup & Toastie</h2>
+								<h2 class="text-rank-green">$12.00</h2>
+
+								<button type="button"
+									class="btn btn-white btn-outline-primary text-black btn-sm btn-white px-6 py-3 rounded-5 my-3 fs-5  ">Add
+									to cart</button>
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="col-3 py-4">
+
+						<div class="bg-white" width="17rem">
+							<img class="card-img-top bg-white" src="./images/Sandwiches-270x270.png"
+								alt="Card image cap">
+							<div class="card-body bg-white d-flex flex-column justify-content-start">
+								<h2 class="justify-content-sm-start text-black fw-light my-2 fs-2">Mexican Melt</h2>
+								<h2 class="text-rank-green">$9.00</h2>
+
+								<button type="button"
+									class="btn btn-white btn-outline-primary text-black btn-sm btn-white px-6 py-3 rounded-5 my-3 fs-5  ">Add
+									to cart</button>
+
+
+
+							</div>
+						</div>
+					</div>
+					<div class="col-3 py-4">
+
+						<div class="bg-white" width="17rem">
+							<img class="card-img-top bg-white" src="./images/featured-image5.jpg"
+								alt="Card image cap">
+							<div class="card-body bg-white d-flex flex-column justify-content-start">
+								<h2 class="justify-content-sm-start text-black fw-light my-2 fs-2">Salad</h2>
+								<h2 class="text-rank-green">$5.00</h2>
+
+								<button type="button"
+									class="btn btn-white btn-outline-primary text-black btn-sm btn-white px-6 py-3 rounded-5 my-3 fs-5  ">Add
+									to cart</button>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!-- //FOOTER -->
+	<div class="container-fluid bg-black text-light py-5">
+		<div class="container-lg bg-black">
+			<div class="row">
+				<div class="col-md-5">
+
+					<h3>GREENVILLE DELI</h3>
+
+				</div>
+				<div class="col-md-2">
+
+					<h3>MENU</h3>
+					<ul class="list-group list-group-flush my-custom-font my-4">
+						<li class="list-group-item bg-black text-light fw-light fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page"
+									href="#">Home</a></small>
+						</li>
+						<li class="list-group-item bg-black text-light fw-light  fs-5 border-0 px-0 py-1">
+							<small><a href="./menu_page.html" class="nav-link py-2 text-light" aria-current="page"
+									href="#">Menu</a></small>
+						</li>
+						<li class="list-group-item bg-black text-light fw-light  fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page"
+									href="#">Food</a></small>
+						</li>
+						<li class="list-group-item bg-black text-light fw-light  fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page"
+									href="#">Services</a></small>
+						</li>
+						<li class="list-group-item bg-black text-light fw-light  fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page" href="#">About
+									Us</a></small>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-md-2">
+					<h3>SUPPORT</h3>
+					<ul class="list-group list-group-flush my-custom-font my-4">
+						<li class="list-group-item bg-black text-light fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page" href="#">Give Us
+									Feedback</a></small>
+						</li>
+						<li class="list-group-item bg-black text-light fs-5 border-0 px-0 py-1">
+							<small> <small><a href="#" class="nav-link py-2 text-light" aria-current="page"
+										href="#">Support Center</a></small></small>
+						</li>
+						<li class="list-group-item bg-black text-light fs-5 border-0 px-0 py-1">
+							<small> <small><a href="#" class="nav-link py-2 text-light" aria-current="page"
+										href="#">FAQ</a></small></small>
+						</li>
+						<li class="list-group-item bg-black text-light fs-5 border-0 px-0 py-1">
+							<small> <small><a href="#" class="nav-link py-2 text-light" aria-current="page"
+										href="#">Delivery Process</a></small></small>
+						</li>
+					</ul>
+				</div>
+
+
+				<div class="col-md-2">
+					<h3>CONTACT</h3>
+					<ul class="list-group list-group-flush my-custom-font my-4">
+						<li class="list-group-item bg-black text-light fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page" href="#">+98 543
+									3584</a></small>
+						</li>
+						<li class="list-group-item bg-black text-light fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page" href="#">+98 543
+									3584</a></small>
+						</li>
+						<li class="list-group-item bg-black text-light fs-5 border-0 px-0 py-1">
+							<small><a href="#" class="nav-link py-2 text-light" aria-current="page"
+									href="#">hi@greenville.ie</a></small>
+						</li>
+
+					</ul>
+				</div>
+
+				<hr class="text-primary">
+				<div class="icons mt-4">
+					<a href='https://www.facebook.com/greenvilledeli/'><i
+							class="bi bi-facebook fs-5 p-2 m-1 text-black bg-white rounded-circle"></i></a>
+					<a href='https://www.instagram.com/greenvilledeli/'><i
+							class="bi bi-instagram fs-5 p-2 m-1 text-black bg-white rounded-circle"></i></a>
+
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
